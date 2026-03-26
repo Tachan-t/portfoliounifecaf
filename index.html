@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Natacha Bezerra | Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Natacha<span> Bezerra</span></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+             
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Analista de IA e Automações Jr.</p>
+                    <p class="description">
+                        Minha jornada na UNIFECAF começou como Analista Acadêmico II no setor de Inovação. Hoje, atuo no desenvolvimento de inteligência artificial, automações e dashboards que impulsionam a eficiência operacional da instituição.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                      
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="imagens/perfil.jpg" alt="Foto de Perfil de Natacha Bezerra" class="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        <section id="projetos" class="projetos container">
+            <h2 class="section-title">Minha Trajetória & Projetos</h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-fase">
+                    <div class="timeline-dot" style="background-color: var(--accent-green); border-color: var(--primary-blue);"></div> 
+                    <h3 class="fase-titulo">Analista de IA e Automações Jr. <span>(Cargo Atual)</span></h3>
+                    
+                    <article class="projeto-card timeline-card">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">n8n</span>
+                                <span class="tag">Google Sheets</span>
+                                <span class="tag">Automação de Processos</span>
+                            </div>
+                            <h4 class="projeto-titulo">Orquestração e Automação: Comunicação de Eventos</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A comunicação de eventos institucionais da UniFECAF exigia um esforço manual repetitivo para notificar diferentes áreas e participantes, o que consumia tempo e abria margem para atrasos ou falhas operacionais.</p>
+                                <p><strong>A Solução:</strong> Projetei uma arquitetura de automação no n8n estabelecendo o Google Sheets como "Fonte de Verdade" (Single Source of Truth). A planilha centraliza as regras de negócio (quem, quando e quais áreas notificar), enquanto o n8n lê esses dados e executa os disparos automáticos de e-mail.</p>
+                                <p><strong>O Resultado:</strong> Estabelecimento de um processo de comunicação 100% organizado, confiável e escalável. A eliminação do trabalho manual elevou o profissionalismo das notificações e garantiu precisão cirúrgica na entrega das mensagens aos destinatários corretos.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/automacao-n8n.png" 
+                                data-caption="Fluxo de automação construído no n8n integrado ao Google Sheets">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Flutter Web</span>
+                                <span class="tag">Supabase (PostgreSQL)</span>
+                                <span class="tag">Full-Stack</span>
+                                <span class="tag">HealthTech</span>
+                            </div>
+                            <h4 class="projeto-titulo">Sistema de Gestão Completo: Clínica Escola de Psicologia</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A Clínica Escola precisava de uma solução robusta, segura e em conformidade com regras de saúde para modernizar a gestão de atendimentos. O objetivo era unificar agendamentos, prontuários eletrônicos sensíveis e a supervisão clínica de estagiários em um único ambiente.</p>
+                                <p><strong>A Solução:</strong> Projetei, desenvolvi e realizei o deploy de uma aplicação Full-Stack (SPA) hospedada no Netlify, utilizando Flutter Web no front-end e Supabase no back-end. O sistema conta com agenda interativa, prontuários digitais com anamneses estruturadas, upload com sanitização de PDFs e um fluxo complexo de assinaturas digitais com validação de RA (Estagiário) e CRP (Supervisor). Também elaborei o manual completo da plataforma para os usuários.</p>
+                                <p><strong>O Resultado:</strong> Digitalização de ponta a ponta do fluxo clínico, que já se encontra em produção. A plataforma garantiu total rastreabilidade, proteção de dados de pacientes e otimizou as auditorias para a coordenação, elevando drasticamente a governança e o padrão tecnológico da clínica.</p>
+                            </div>
+                            
+                          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                                <button 
+                                    class="projeto-link btn-trigger-modal" 
+                                    style="margin-top: 0;"
+                                    data-image="imagens/clinica-psicologia.png" 
+                                    data-caption="Visão do Sistema da Clínica Escola: Gestão de Pacientes e Prontuário Eletrônico">
+                                    Ver Evidência (Print) <span>&rarr;</span>
+                                </button>
+                                
+                                <a href="https://www.canva.com/design/DAHAZ7zlWB8/IQ6YUTcVMCutTJDTDQOYKA/edit?utm_content=DAHAZ7zlWB8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="projeto-link" style="margin-top: 0;" target="_blank">
+                                    Ler Manual da Plataforma <span>&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Design System</span>
+                                <span class="tag">UI/UX Avançado</span>
+                                <span class="tag">HealthTech</span>
+                            </div>
+                            <h4 class="projeto-titulo">Plataforma de Gestão Clínica: Odontologia UniFECAF</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A Clínica de Odontologia necessitava de um sistema de gestão moderno e intuitivo, padronizado com a identidade visual da instituição e capaz de gerenciar agendas complexas divididas por boxes de atendimento, prontuários e o fluxo da Central de Material e Esterilização (CME).</p>
+                                <p><strong>A Solução:</strong> Estou desenvolvendo uma aplicação em Flutter com foco absoluto na experiência do usuário (UI/UX). Implementei um Design System centralizado com as cores oficiais (#003B73 e #00A859), criei um Dashboard funcional com contadores integrados ao banco de dados e projetei uma agenda interativa com layout horizontal estilo Kanban para visualização dinâmica dos boxes de atendimento.</p>
+                                <p><strong>O Resultado:</strong> Entrega de uma plataforma robusta com interfaces de alto contraste e legibilidade, garantindo navegação fluida e padronizada. A solução otimizou o controle administrativo da clínica e simplificou o agendamento de consultas, elevando a eficiência operacional do setor.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/clinica-odontologia.png" 
+                                data-caption="Visão do Dashboard e Agenda estilo Kanban do Sistema de Odontologia">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">n8n</span>
+                                <span class="tag">Google Apps Script</span>
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">Engenharia de Dados</span>
+                            </div>
+                            <h4 class="projeto-titulo">Sistema Integrado: Avaliação de Tutores nas Lives</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A avaliação das lives pelos tutores carecia de um processo estruturado. A coleta era engessada, os cálculos de notas precisavam de intervenção manual e a base de dados não permitia uma consolidação confiável (devido a repetições de disciplinas) para o acompanhamento gerencial.</p>
+                                <p><strong>A Solução:</strong> Criei um pipeline completo de automação. Desenvolvi um web form dinâmico com regras de dependência, utilizei Google Apps Script para o cálculo automático de pontuações complexas e orquestrei o fluxo via n8n. Para o BI (Looker Studio), criei uma "Chave de Consolidação" inteligente que agrupa corretamente professores, cursos e disciplinas, eliminando duplicidades.</p>
+                                <p><strong>O Resultado:</strong> Entrega de um processo 100% automatizado, altamente escalável e à prova de falhas humanas nos cálculos. A gestão agora acompanha o desempenho acadêmico através de um dashboard profissional, com base de dados limpa e métricas exatas por aula e disciplina.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/avaliacao-tutores.png" 
+                                data-caption="Dashboard e Fluxo Integrado de Avaliação das Lives">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                   <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">JavaScript (AJAX)</span>
+                                <span class="tag">Google Apps Script</span>
+                                <span class="tag">Front-end Customizado</span>
+                            </div>
+                            <h4 class="projeto-titulo">Formulário Dinâmico: UX Customizada para Jornada Acadêmica</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> Criar um canal de coleta de dados que rompesse com o padrão estético e funcional dos formulários convencionais, oferecendo uma interface moderna e exclusiva para os participantes do evento.</p>
+                                <p><strong>A Solução:</strong> Desenvolvi uma aplicação web customizada focada em uma experiência de resposta fluida e dinâmica. Implementei um sistema multi-etapas (Wizard) com barra de progresso, animações de transição, auto-focus e avanço automático. A estrutura utiliza JavaScript (AJAX) integrado ao Google Apps Script para processamento de dados em tempo real, sem a necessidade de recarregar a página.</p>
+                                <p><strong>O Resultado:</strong> Uma interface de alta performance que prioriza a jornada do usuário, tornando o ato de responder simples e intuitivo. A solução demonstrou como o design e a tecnologia podem trabalhar juntos para criar ferramentas institucionais mais profissionais e envolventes.</p>
+                            </div>
+                            
+                            <a href="https://natacha1919.github.io/FormsJornada/" class="projeto-link" target="_blank">Acessar Formulário Dinâmico <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Flutter Web</span>
+                                <span class="tag">Supabase (Realtime)</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Full-Stack</span>
+                            </div>
+                            <h4 class="projeto-titulo">Aplicação de Registro de Presença em Tempo Real ENADE</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A coordenação necessitava de uma solução simples, ágil e robusta para que os fiscais pudessem registrar e monitorar a presença dos alunos durante a prova do ENADE em tempo real, eliminando planilhas impressas e centralizando as informações de forma segura.</p>
+                                <p><strong>A Solução:</strong> Projetei, desenvolvi e realizei o deploy de uma aplicação Full-Stack. O front-end foi construído em Flutter Web com uma UI/UX moderna (Dark Mode e Optimistic UI) para uma experiência de uso extremamente rápida. O back-end utiliza Supabase Realtime para sincronizar as presenças instantaneamente entre todos os fiscais conectados, com segurança garantida por políticas de Row Level Security (RLS) no PostgreSQL. A aplicação foi totalmente containerizada com Docker para um ambiente de produção consistente.</p>
+                                <p><strong>O Resultado:</strong> Otimização extrema do processo de registro de presença do ENADE. A solução garantiu total integridade e rastreabilidade dos dados, eliminando erros humanos, tempo de latência e proporcionando à gestão uma visão consolidada e segura do andamento do evento em tempo real.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/app-enade.png" 
+                                data-caption="Interface do Aplicativo ENADE com lista de alunos agrupada por curso e controle de presença em tempo real">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Google Apps Script</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Google Forms</span>
+                                <span class="tag">Gestão de Eventos</span>
+                            </div>
+                            <h4 class="projeto-titulo">Script de Automação: Controle Inteligente de Vagas</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A coordenação de Psicologia organizava frequentemente eventos, triagens e dinâmicas com limite estrito de participantes. O uso padrão do Google Forms não impedia inscrições excedentes (overbooking), gerando horas de trabalho manual para cruzar dados e o desconforto de ter que cancelar a inscrição de alunos excedentes.</p>
+                                <p><strong>A Solução:</strong> Desenvolvi um script customizado utilizando Google Apps Script (JavaScript) embutido no Google Forms. A automação funciona como um "vigia": ela monitora a quantidade de respostas em tempo real e, assim que o limite pré-estabelecido de uma opção é atingido, o script desabilita ou oculta automaticamente aquela alternativa do formulário público.</p>
+                                <p><strong>O Resultado:</strong> Eliminação absoluta do overbooking e zero necessidade de monitoramento humano durante as inscrições. A solução trouxe tranquilidade para a coordenação escalar seus eventos e garantiu uma experiência transparente e justa para os alunos.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/script-limite-vagas.png" 
+                                data-caption="Trecho do código em Google Apps Script responsável pelo bloqueio automático de vagas">
+                                Ver Evidência (Print do Código) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Google Forms Inteligentes</span>
+                                <span class="tag">Google Sheets</span>
+                                <span class="tag">Transformação Digital (Paperless)</span>
+                                <span class="tag">Processos Acadêmicos</span>
+                            </div>
+                            <h4 class="projeto-titulo">Digitalização e Automação: Processos de Estágio de Enfermagem</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A coordenação de Enfermagem dependia fortemente de processos manuais e PDFs impressos para o controle de frequência, anotações diárias e avaliações de desempenho dos estágios. Isso gerava ineficiência, acúmulo físico de documentos e extrema dificuldade na consolidação de dados para relatórios.</p>
+                                <p><strong>A Solução:</strong> Conduzi a transformação digital (iniciativa Paperless) do setor. Desenvolvi uma suíte de formulários inteligentes e roteados para diferentes finalidades (Frequência, Avaliação de Baixa/Alta Complexidade e Anotações Diárias). Configurei automações para que cada resposta fosse padronizada e enviada em tempo real para um único banco de dados centralizado.</p>
+                                <p><strong>O Resultado:</strong> Eliminação total do uso de papel nos processos de estágio acompanhados. A coordenação passou a ter um controle rigoroso, rastreável e unificado de todos os discentes, facilitando a emissão de relatórios, garantindo a segurança dos registros e promovendo a sustentabilidade operacional da instituição.</p>
+                            </div>
+                            
+                            <a href="https://natacha1919.github.io/anotacoes-discente/" class="projeto-link" target="_blank">Acessar Evidências <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Engenharia de Dados (ETL)</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">Business Intelligence</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboard de Auditoria: Qualidade de Conteúdo EAD/SemiPresencial</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A instituição precisava auditar a qualidade das disciplinas entregues, mas os dados brutos possuíam inconsistências de tipagem (textos misturados com booleanos, TRUE/FALSE), impedindo agregações e cálculos matemáticos exatos. Além disso, era necessário traduzir 15 métricas complexas em uma visualização amigável para a gestão.</p>
+                                <p><strong>A Solução:</strong> Apliquei técnicas de Engenharia de Dados (ETL) utilizando rotinas SQL (CASE WHEN CAST) para padronizar e realizar o "hardening" da base de dados. No Looker Studio, estruturei scorecards e gráficos segmentados em 4 pilares (Técnica, Pedagógica, Linguagem e UX), otimizando a interatividade e desativando o cross-filtering para evitar quebra de visualização.</p>
+                                <p><strong>O Resultado:</strong> O painel gerou insights críticos para a tomada de decisão, identificando gargalos como uma falha de 98% na aderência ao template oficial e comprovando analiticamente que o uso de Storytelling aumentava a nota final em 25%. A qualidade acadêmica passou a ser gerida com precisão de dados.</p>
+                            </div>
+                            
+                            <a href="https://lookerstudio.google.com/reporting/a0be48b6-7456-4279-9322-d71fb7066e00" class="projeto-link" target="_blank">Acessar Dashboard de Auditoria <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">n8n</span>
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Google Gemini</span>
+                                <span class="tag">Tavily Search</span>
+                            </div>
+                            <h4 class="projeto-titulo">Prova de Conceito (PoC): Agente de Pesquisa com IA</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> Explorar e validar a viabilidade de integrar modelos de Inteligência Artificial Generativa com motores de busca em tempo real, entregando o resultado através de uma interface mobile amigável e acessível.</p>
+                                <p><strong>A Solução:</strong> Desenvolvi um aplicativo completo de ponta a ponta. No front-end, utilizei Flutter para criar uma interface mobile moderna (UI/UX). No back-end, configurei o n8n para orquestrar a comunicação entre o Google Gemini (interpretação e geração de respostas) e o Tavily (busca de dados atualizados na web).</p>
+                                <p><strong>O Resultado:</strong> Validação bem-sucedida da arquitetura de integração. O experimento consolidou minha capacidade de realizar o deploy de soluções full-stack complexas, conectando APIs de IA avançadas com orquestradores de fluxo e interfaces voltadas para o usuário final.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/agente-pesquisa-ia.png" 
+                                data-caption="Print da interface do Agente de Pesquisa construído em Flutter e orquestrado via n8n">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+                    
+                </div> <div class="timeline-fase">
+                    <div class="timeline-dot"></div>
+                    <h3 class="fase-titulo">Analista Acadêmico II <span>(Setor de Inovação)</span></h3>
+                    
+                    <article class="projeto-card timeline-card">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Google Sites</span>
+                                <span class="tag">Mentoria</span>
+                                <span class="tag">Soft Skills</span>
+                            </div>
+                            <h4 class="projeto-titulo">Oficina: Construindo Portfólios</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> Alunos da instituição precisavam de uma forma acessível e intuitiva para planejar e criar seus primeiros portfólios acadêmicos e profissionais.</p>
+                                <p><strong>A Solução:</strong> A convite da coordenação, desenvolvi o material didático e ministrei uma oficina prática ensinando a estruturar projetos, escolher temas e configurar o Google Sites do zero.</p>
+                                <p><strong>O Resultado:</strong> Capacitação de diversos alunos, desenvolvendo suas habilidades de apresentação profissional e fortalecendo a cultura de tecnologia na instituição.</p>
+                            </div>
+                            
+                            <a href="https://gamma.app/docs/Google-Sites-pdeu4tbct3txcw3" class="projeto-link" target="_blank">Ver Apresentação (Slides) <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Business Intelligence (BI)</span>
+                                <span class="tag">Análise de Dados</span>
+                                <span class="tag">Dashboard</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboard Analítico: V Jornada Acadêmica 2025.1</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A coordenação da UNIFECAF precisava mensurar o impacto do evento, entender o perfil dos participantes e analisar os feedbacks de forma visual e centralizada para embasar edições futuras.</p>
+                                <p><strong>A Solução:</strong> Desenvolvi um dashboard interativo utilizando ferramentas de BI para consolidar, analisar e apresentar os dados cruciais do evento, incluindo distribuição por áreas de conhecimento e adequação de horários.</p>
+                                <p><strong>O Resultado:</strong> Transformação de dados brutos em insights estratégicos. A gestão obteve uma visão clara do total de participantes, avaliação geral e sugestões, facilitando a tomada de decisão guiada por dados.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/dashboard-jornada.png" 
+                                data-caption="Print do Dashboard Analítico - V Jornada Acadêmica 2025.1">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">Google Planilhas</span>
+                                <span class="tag">Gestão Acadêmica</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboards: Práticas Exitosas dos Docentes (2022 e 2023)</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A instituição precisava de uma forma eficiente para mapear, centralizar e analisar as metodologias de ensino de sucesso aplicadas pelos professores, a fim de entender o impacto no desenvolvimento de Soft Skills dos alunos.</p>
+                                <p><strong>A Solução:</strong> Desenvolvi painéis interativos utilizando Looker Studio integrado ao Google Planilhas. Criei filtros dinâmicos por semestre, disciplinas e cursos, além de uma visualização detalhada das competências trabalhadas em cada prática.</p>
+                                <p><strong>O Resultado:</strong> Democratização dos dados acadêmicos. A coordenação passou a ter uma visão clara do volume de práticas exitosas, facilitando a valorização do corpo docente e a replicação de metodologias eficientes em outras áreas.</p>
+                            </div>
+                            
+                            <a href="https://lookerstudio.google.com/reporting/ccf3b685-e203-4911-a1f3-7cccb36dff36" class="projeto-link" target="_blank">Acessar Dashboard (Link) <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Linktree</span>
+                                <span class="tag">Gestão da Informação</span>
+                                <span class="tag">Apoio Institucional</span>
+                            </div>
+                            <h4 class="projeto-titulo">Centralizador de Recursos (Linktree): Pesquisa 2025</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> Alunos e coordenadores da UNIFECAF lidavam com a dispersão de links, artigos e ferramentas essenciais, dificultando o acesso rápido a materiais importantes do dia a dia acadêmico.</p>
+                                <p><strong>A Solução:</strong> Estruturei um Linktree oficial para a área de Pesquisa 2025, organizando todos os recursos em um único hub. O sucesso da usabilidade foi tão grande que outras coordenações decidiram adotar a prática, e atuei prestando suporte direto na construção dos painéis delas.</p>
+                                <p><strong>O Resultado:</strong> Padronização da comunicação institucional, acesso otimizado a recursos e fomento de uma cultura de organização digital entre os coordenadores, impactando positivamente a jornada de centenas de alunos e docentes.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/linktree-pesquisa.png" 
+                                data-caption="Print do Linktree estruturado para a Pesquisa 2025">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">Google Planilhas</span>
+                                <span class="tag">Impacto Social (NAP)</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboard de Monitoramento: Atendimentos do NAP</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> O Núcleo de Apoio Psicopedagógico (NAP) precisava de um controle rigoroso e visual sobre os acolhimentos aos alunos para entender o volume de demandas, os cursos que mais precisavam de suporte e a proporção de modalidades de atendimento.</p>
+                                <p><strong>A Solução:</strong> Criei um painel interativo no Looker Studio alimentado por Planilhas Google, incorporando mapas e filtros dinâmicos para mapear a quantidade de alunos atendidos, diagnósticos e a divisão entre sessões presenciais e online.</p>
+                                <p><strong>O Resultado:</strong> A gestão do NAP ganhou uma ferramenta ágil e sensível para identificar rapidamente quais áreas demandam mais atenção psicológica e pedagógica, otimizando o direcionamento de recursos e melhorando o acolhimento aos estudantes.</p>
+                            </div>
+                            
+                            <a href="https://lookerstudio.google.com/reporting/a6f1a564-eadb-4bff-a7a2-b125258a4f44" class="projeto-link" target="_blank">Acessar Dashboard do NAP <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">Google Sites</span>
+                                <span class="tag">Gestão de Extensão (ODS)</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboard de Desempenho: Extensão Curricularizada e ODS 2024.2</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> A Coordenação de Extensão precisava monitorar o engajamento e a taxa de sucesso dos alunos nas atividades curriculares ligadas aos ODS, além de necessitar que esses dados ficassem publicamente acessíveis e atualizados em seu portal.</p>
+                                <p><strong>A Solução:</strong> Criei um painel analítico no Looker Studio, alimentado pelo Google Planilhas, para cruzar dados de participação, aprovações, reprovações e ausências. Em seguida, realizei a integração (embed) desse dashboard diretamente no Google Sites da coordenação.</p>
+                                <p><strong>O Resultado:</strong> Visibilidade em tempo real para tomada de decisões estratégicas. A coordenação passou a identificar rapidamente gargalos de evasão ou reprovação, garantindo a conformidade e o sucesso dos projetos de extensão da instituição.</p>
+                            </div>
+                            
+                            <a href="https://lookerstudio.google.com/reporting/b80776f8-6a13-4ea6-9774-33f2bc74ffcf" class="projeto-link" target="_blank">Acessar Dashboard Integrado <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Business Intelligence</span>
+                                <span class="tag">Regulatório & Compliance (MEC)</span>
+                                <span class="tag">Visualização de Dados</span>
+                            </div>
+                            <h4 class="projeto-titulo">Dashboard Regulatório: Graduação, Pós e Polos</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> O setor Regulatório lidava com planilhas massivas e complexas contendo dados críticos de todos os cursos (carga horária, semestre de estágio, conceito ENADE, relação aluno/preceptor). A extração rápida de informações para tomadas de decisão e auditorias era um processo lento e exaustivo.</p>
+                                <p><strong>A Solução:</strong> Projetei e desenvolvi um dashboard unificado para consolidar essas vastas bases de dados. Transformei as linhas da planilha em painéis visuais interativos e de fácil navegação, separando as visões por Graduação, Pós-graduação e Polos de apoio.</p>
+                                <p><strong>O Resultado:</strong> Otimização extrema do tempo de consulta da equipe. A gestão regulatória passou a ter acesso imediato e confiável a métricas vitais de conformidade e qualidade institucional, garantindo maior segurança nas operações com o MEC.</p>
+                            </div>
+                            
+                            <button 
+                                class="projeto-link btn-trigger-modal" 
+                                data-image="imagens/dashboard-regulatorio.png" 
+                                data-caption="Print do Dashboard Regulatório detalhando indicadores como Conceito ENADE e Carga Horária">
+                                Ver Evidência (Print) <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card timeline-card" style="margin-top: 2rem;">
+                        <div class="projeto-conteudo">
+                            <div class="projeto-tags">
+                                <span class="tag">Google Sites</span>
+                                <span class="tag">Governança Corporativa</span>
+                                <span class="tag">UI/UX Design</span>
+                            </div>
+                            <h4 class="projeto-titulo">Portal Acadêmico UniFECAF: "Guardiã" do Google Sites</h4>
+                            
+                            <div class="projeto-detalhes">
+                                <p><strong>O Desafio:</strong> Com diversas coordenações precisando expor suas entregas acadêmicas, havia o risco de descentralização das informações e perda da identidade visual padrão da instituição na criação de múltiplos portais.</p>
+                                <p><strong>A Solução:</strong> Assumi a responsabilidade de gerenciar o ecossistema do Google Sites de ponta a ponta. Atuei desenhando os layouts, estruturando a arquitetura da informação e orientando individualmente cada coordenador na construção e manutenção de suas páginas.</p>
+                                <p><strong>O Resultado:</strong> Centralização segura e padronizada de todas as entregas acadêmicas da instituição. A iniciativa garantiu uma navegação intuitiva para os alunos e empoderou os coordenadores através de treinamentos e suporte contínuo.</p>
+                            </div>
+                            
+                            <a href="https://sites.google.com/fecaf.com.br/portalacademicounifecaf/início" class="projeto-link" target="_blank">Acessar Portal Institucional <span>&rarr;</span></a>
+                        </div>
+                    </article>
+
+                </div> </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content-container">
+            <img class="modal-content-img" id="imgModalTarget" src="" alt="">
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

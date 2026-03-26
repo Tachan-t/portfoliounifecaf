@@ -1,0 +1,499 @@
+/* --- Variáveis de Cor (Baseadas na logo UniFECAF) e Tipografia --- */
+:root {
+    --primary-blue: #031430; /* Azul Marinho do Fundo */
+    --secondary-blue: #185ba0; /* Azul Claro de Destaque */
+    --accent-green: #22b14c; /* Verde do Logo */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* --- Header & Navbar (Mobile First) --- */
+.header {
+    background-color: var(--primary-blue);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent-green);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-blue);
+    text-align: center;
+    transition: var(--transition);
+    list-style: none;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent-green);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: var(--transition);
+    background-color: var(--text-light);
+}
+
+.hero {
+    /* O segredo está aqui: combinamos a cor marinho (com 92% de opacidade) + a imagem */
+    background: 
+        linear-gradient(rgba(3, 20, 48, 0.92), rgba(3, 20, 48, 0.92)), 
+        url('imagens/logo-unifecaf-bg.png');
+    
+    background-size: cover, contain; /* O 'contain' mantém a logo inteira */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Efeito de marca d'água fixa ao rolar */
+    
+    color: var(--text-light);
+    padding: 120px 0 60px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Garante que o conteúdo fique nítido sobre o fundo */
+.hero-content {
+    position: relative;
+    z-index: 5; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.greeting {
+    color: var(--accent-green);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+    color: var(--secondary-blue);
+}
+
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent-green);
+    color: var(--text-light);
+    border: 2px solid var(--accent-green);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-green);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--secondary-blue);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-blue);
+}
+
+/* --- Estilização da Imagem do Hero --- */
+.hero-image {
+    width: 100%;
+    max-width: 300px;
+    display: flex; /* Garante centralização */
+    justify-content: center;
+    margin-top: 2rem; /* Espaço para mobile */
+}
+
+/* Removemos a classe .image-placeholder antiga e criamos a .hero-img */
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* Mantém a foto quadrada */
+    object-fit: cover; /* Garante que a foto preencha sem distorcer */
+    border-radius: 50%; /* Faz o círculo */
+    border: 4px solid var(--accent-green); /* Borda verde UniFECAF */
+    background-color: var(--secondary-blue); /* Fundo azul claro se a foto for transparente */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra suave para dar profundidade */
+}
+
+/* Ajuste específico para desktop (Media Query já existente) */
+@media (min-width: 768px) {
+    /* ... (outras regras) ... */
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0; /* Remove margem no desktop */
+    }
+}
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .nav-item {
+        margin: 0 0 0 2rem;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+/* --- Linha do Tempo (Timeline) --- */
+.projetos {
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent-green); /* A linha principal */
+}
+
+.timeline-fase {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 20px; /* Espaço entre a linha e o conteúdo */
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -28px; /* Centraliza a bolinha na linha */
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-blue);
+    border: 3px solid var(--accent-green);
+}
+
+.fase-titulo {
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+}
+
+.fase-titulo span {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* --- Adaptação do Card para a Timeline --- */
+.timeline-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--secondary-blue);
+    transition: var(--transition);
+}
+
+.timeline-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateX(5px); /* Efeito de deslizar para a direita no hover */
+}
+
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: var(--bg-light);
+    color: var(--secondary-blue);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.projeto-titulo {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.projeto-detalhes p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.projeto-detalhes strong {
+    color: var(--primary-blue);
+}
+
+.projeto-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.projeto-link:hover {
+    color: var(--secondary-blue);
+}
+
+/* --- Estilização do Botão de Evidência (parece um link) --- */
+.btn-trigger-modal {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    /* Reutiliza o estilo do projeto-link */
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-green);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.btn-trigger-modal:hover {
+    color: var(--secondary-blue);
+    text-decoration: underline;
+}
+
+/* --- Estilização da Modal (Pop-up) --- */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 2000; /* Acima de tudo (inclusive da navbar) */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita scroll se a imagem for muito grande */
+    background-color: rgba(0,0,0,0.9); /* Fundo preto semi-transparente */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    padding: 20px;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Classe que o JS adiciona para mostrar a modal */
+.modal.active {
+    display: flex;
+}
+
+.modal-content-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh; /* Não deixa a imagem ficar maior que 80% da altura da tela */
+    border: 4px solid white;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    
+    /* Animação de entrada */
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.modal-caption {
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* O botão de fechar (×) */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2001; /* Garante que fica acima da imagem */
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+/* Responsividade para mobile: ajusta o tamanho da imagem */
+@media only screen and (max-width: 700px){
+    .modal-content-container {
+        width: 100%;
+    }
+    .close-modal {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+}
